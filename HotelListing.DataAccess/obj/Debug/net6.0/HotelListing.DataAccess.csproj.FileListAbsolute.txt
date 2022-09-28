@@ -1,0 +1,17 @@
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.DataAccess.deps.json
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.DataAccess.dll
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.DataAccess.pdb
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.Models.dll
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.Models.pdb
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.csproj.AssemblyReference.cache
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.AssemblyInfoInputs.cache
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.AssemblyInfo.cs
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.csproj.CoreCompileInputs.cache
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.csproj.CopyComplete
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.dll
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\refint\HotelListing.DataAccess.dll
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.pdb
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\ref\HotelListing.DataAccess.dll
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\bin\Debug\net6.0\HotelListing.DataAccess.runtimeconfig.json
+D:\Practice\HotelListingWebAPI\HotelListing.DataAccess\obj\Debug\net6.0\HotelListing.DataAccess.genruntimeconfig.cache

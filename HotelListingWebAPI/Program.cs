@@ -1,3 +1,5 @@
+using HotelListing.DataAccess.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -26,6 +28,11 @@ builder.Services.AddCors(c => c.AddPolicy(
     .AllowAnyMethod()
     .AllowAnyHeader())
 );
+
+// Add service to connect to SQL Server Database
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("DefaultConnection")
+    ));
 
 var app = builder.Build();
 
