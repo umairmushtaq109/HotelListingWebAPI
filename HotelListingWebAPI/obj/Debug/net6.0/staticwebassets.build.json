@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "coeDQSCq+TKMhrRsOu2pHeKtsLXxY3v1lrbVyti26iA=",
+  "Source": "HotelListingWebAPI",
+  "BasePath": "_content/HotelListingWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
