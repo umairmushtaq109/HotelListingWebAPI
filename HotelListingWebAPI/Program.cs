@@ -1,11 +1,12 @@
 using HotelListing.DataAccess.Data;
+using HotelListing.Models.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Added For SeriLog
+// Added For SeriLog
 var logger = new LoggerConfiguration()
   .ReadFrom.Configuration(builder.Configuration)
   .Enrich.FromLogContext()
@@ -13,15 +14,16 @@ var logger = new LoggerConfiguration()
 
 // Add services to the container.
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelListing", Version = "v1"}));
 
-//Added For SeriLog
+// Added For SeriLog
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
-//Added Cross Origin Resourse Sharing Policy CORS (For Communicating with Different Network/Project)
+// Added Cross Origin Resourse Sharing Policy CORS (For Communicating with Different Network/Project)
 builder.Services.AddCors(c => c.AddPolicy(
     "AllowAll",
     builder => builder.AllowAnyOrigin()
@@ -32,7 +34,10 @@ builder.Services.AddCors(c => c.AddPolicy(
 // Add service to connect to SQL Server Database
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
-    ));
+));
+
+// Added AutoMapper
+builder.Services.AddAutoMapper(typeof(MapperInitializer));
 
 var app = builder.Build();
 
