@@ -75,3 +75,9 @@ D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\HotelListing.
 D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\HotelListing.Models.pdb
 D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Humanizer.dll
 D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\AutoMapper.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Practice\HotelListingWebAPI\HotelListingWebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

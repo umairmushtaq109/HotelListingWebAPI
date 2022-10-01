@@ -1,5 +1,8 @@
 using HotelListing.DataAccess.Data;
+using HotelListing.DataAccess.Repository;
+using HotelListing.DataAccess.Repository.IRepository;
 using HotelListing.Models.Configurations;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -13,7 +16,10 @@ var logger = new LoggerConfiguration()
   .CreateLogger();
 
 // Add services to the container.
-builder.Services.AddControllers();
+// Added Newtonsoft Json for ASP .NET MVC Core to remove Object Loop Cycle Bug
+builder.Services.AddControllers().AddNewtonsoftJson(
+    u => u.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -39,6 +45,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 // Added AutoMapper
 builder.Services.AddAutoMapper(typeof(MapperInitializer));
 
+// Added Unit Of Work 
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -61,7 +70,6 @@ try
 {
     logger.Information("Application is Starting");
     app.Run();
-
 }
 catch (Exception e)
 {
