@@ -1,8 +1,9 @@
+using HotelListing.DataAccess.AuthService;
 using HotelListing.DataAccess.Data;
 using HotelListing.DataAccess.Repository;
 using HotelListing.DataAccess.Repository.IRepository;
 using HotelListing.Models.Configurations;
-using Microsoft.AspNetCore.Builder;
+using HotelListingWebAPI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -23,7 +24,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelListing", Version = "v1"}));
+builder.Services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelListing", Version = "v1" }));
 
 // Added For SeriLog
 builder.Logging.ClearProviders();
@@ -48,6 +49,18 @@ builder.Services.AddAutoMapper(typeof(MapperInitializer));
 // Added Unit Of Work 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
+// Configuring Identity in Service Extensions Class and adding it here
+builder.Services.ConfigureIdentity();
+
+// Configuring JWT in Service Extensions Class and adding it here
+builder.Services.ConfigureJWT(builder.Configuration);
+
+// Added Auth Manager Service 
+builder.Services.AddScoped<IAuthManager, AuthManager>();
+
+// Added to read Environment Variables
+builder.Configuration.AddEnvironmentVariables();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -61,6 +74,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors(policyName: "AllowAll");
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
@@ -79,4 +94,3 @@ finally
 {
     Log.CloseAndFlush();
 }
-

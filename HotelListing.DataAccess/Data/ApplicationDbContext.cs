@@ -1,4 +1,6 @@
 ﻿using HotelListing.Models;
+using HotelListing.Models.Configurations.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HotelListing.DataAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions options) : base(options){ }
 
@@ -17,53 +19,12 @@ namespace HotelListing.DataAccess.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Country>().HasData(
-                new Country
-                {
-                    Id = 1,
-                    Name = "United States of America",
-                    ShortName = "USA"
-                },
-                new Country
-                {
-                    Id = 2,
-                    Name = "Pakistan",
-                    ShortName = "PAK"
-                },
-                new Country
-                {
-                    Id = 3,
-                    Name = "India",
-                    ShortName = "IND"
-                }
-            );
+            //Added After IdentityDbContext
+            base.OnModelCreating(builder);
 
-            builder.Entity<Hotel>().HasData(
-                new Hotel
-                {
-                    Id = 1,
-                    Name = "Lords Hotel",
-                    Address = "New York",
-                    Rating = 4.5,
-                    CountryId = 1
-                },
-                new Hotel
-                {
-                    Id = 2,
-                    Name = "Pearl Continental Hotel",
-                    Address = "Islamabad",
-                    Rating = 4.8,
-                    CountryId = 2
-                },
-                new Hotel
-                {
-                    Id = 3,
-                    Name = "Taj Hotel",
-                    Address = "Mumbai",
-                    Rating = 4.2,
-                    CountryId = 3 
-                }
-            );
+            builder.ApplyConfiguration(new CountryConfiguration());
+            builder.ApplyConfiguration(new HotelConfiguration());            
+            builder.ApplyConfiguration(new RoleConfiguration());
         }
 
     }

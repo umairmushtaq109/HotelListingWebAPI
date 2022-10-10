@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bVV14QQ21GERuHem7neZr4dwlN7iZvr6+QURNILJBpGKNw7d1q1CXa+oN5k3vOLa+FFn2iGobaHj5xMB9VTj+Q==",
+  "dgSpecHash": "Z36tOQdF/RLkM44RFmGmuAZ6FKnMxHwd5k3qSp4WzlPp+cEPkIlFABtcmS2xOsOCDdFZZViYgCgwx/RTTSnJLQ==",
   "success": true,
   "projectFilePath": "D:\\Practice\\HotelListingWebAPI\\HotelListingWebAPI\\HotelListingWebAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.9\\microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.9\\microsoft.aspnetcore.authentication.openidconnect.6.0.9.nupkg.sha512",
+    "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
+    "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.9\\microsoft.aspnetcore.cryptography.keyderivation.6.0.9.nupkg.sha512",
+    "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.9\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.9\\microsoft.aspnetcore.jsonpatch.6.0.9.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.9.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -32,6 +35,8 @@
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.0.0\\microsoft.extensions.dependencymodel.3.0.0.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.8\\microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.9\\microsoft.extensions.identity.core.6.0.9.nupkg.sha512",
+    "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.9\\microsoft.extensions.identity.stores.6.0.9.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Umair Mushtaq\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
