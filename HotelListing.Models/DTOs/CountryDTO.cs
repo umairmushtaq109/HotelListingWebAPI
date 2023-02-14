@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace HotelListing.Models.DTOs
 {
@@ -14,7 +9,7 @@ namespace HotelListing.Models.DTOs
     }
 
     public class CreateCountryDTO
-    {        
+    {
         [Required]
         [StringLength(maximumLength: 50, ErrorMessage = "Country Name is too long")]
         public string Name { get; set; }
@@ -22,5 +17,10 @@ namespace HotelListing.Models.DTOs
         [Required]
         [StringLength(maximumLength: 3, ErrorMessage = "Short Name is too long")]
         public string ShortName { get; set; }
+    }
+
+    public class UpdateCountryDTO : CreateCountryDTO
+    {
+
     }
 }
